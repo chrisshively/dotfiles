@@ -1,0 +1,22 @@
+[user]
+	name = alexandru topliceanu
+	email = alexandru.topliceanu@gmail.com
+[color]
+	ui = true
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    df = diff
+    dfc = diff --cached
+    pa = add --patch
+    rlog = reflog # useful for lost SHA's
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    type = cat-file -t
+    dump = cat-file -p
+    prb = pull --rebase
+[core]
+	autocrlf = input
+	safecrlf = true
