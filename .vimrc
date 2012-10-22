@@ -77,7 +77,7 @@ nnoremap <silent> <S-F12> :bp<CR>
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 "hightlight the 80th column
-"set colorcolumn=80
+set colorcolumn=80
 
 "hightlight search results
 set hlsearch
