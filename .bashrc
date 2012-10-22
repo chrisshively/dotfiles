@@ -168,3 +168,6 @@ function parse_git_branch() {
 # \[\e]1;\]$(basename $(dirname $PWD))/\W\[\a\]
 
 PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[${BOLD}${MAGENTA}\]\u\[$RESET\]\[$WHITE\]@\[$ORANGE\]\h\[$RESET\]\[$WHITE\]:\[$GREEN\]\w\[$RESET\]\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" git:\")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\[$WHITE\]\n\$ \[$RESET\]"
+
+# use vim-like controls for the command line
+#bindkey -v

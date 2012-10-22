@@ -102,4 +102,4 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " remap ESC to jj so you can switch to command mode quickly
-inoremap jj <ESC>
+" inoremap jj <ESC>
