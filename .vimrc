@@ -60,7 +60,7 @@ let coffee_compiler = '/usr/local/bin/coffee'
 let coffee_linter = '/usr/local/bin/coffeelint'
 
 " set configuration options for coffee
-let coffee_lint_options = '-f ~/.vim/conf/coffeelint.json'
+" let coffee_lint_options = '-f ~/.vim/conf/coffeelint.json'
 
 "disable automatic newline insertion at the end of all edited files
 "set binary

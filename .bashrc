@@ -171,3 +171,7 @@ PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[${BOLD}
 
 # use vim-like controls for the command line
 #bindkey -v
+
+# For virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs # keep all virtualenvs in a single folder
+source /usr/local/bin/virtualenvwrapper.sh
