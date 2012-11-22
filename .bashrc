@@ -175,3 +175,7 @@ PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[${BOLD}
 # For virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs # keep all virtualenvs in a single folder
 source /usr/local/bin/virtualenvwrapper.sh
+
+# for keyring auth
+keychain --clear $HOME/.ssh/id_rsa
+source $HOME/.keychain/$HOSTNAME-sh
