@@ -7,6 +7,7 @@
     co = checkout
     ci = commit
     st = status
+    stb = status -sb
     br = branch
     df = diff
     dfc = diff --cached
@@ -18,5 +19,5 @@
     dump = cat-file -p
     prb = pull --rebase
 [core]
-	autocrlf = input
+	autocrlf = false
 	safecrlf = true
