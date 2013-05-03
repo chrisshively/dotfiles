@@ -163,7 +163,7 @@ function parse_git_branch() {
 # in the title bar using the command sequence
 # \[\e]2;[bash]   \h::\]$PWD\[\a\]
 
-# Put the penultimate and current directory 
+# Put the penultimate and current directory
 # in the iterm tab
 # \[\e]1;\]$(basename $(dirname $PWD))/\W\[\a\]
 
@@ -176,3 +176,10 @@ PS1="\[\e]2;$PWD\[\a\]\[\e]1;\]$(basename "$(dirname "$PWD")")/\W\[\a\]\[${BOLD}
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
+
+# Alias hub to git
+alias git=hub
+
+# Alias for sync_mozaic
+export UBERVU_HOME=/home/alexandru/work/uberVU
+alias sync_mozaic='python $UBERVU_HOME/thehole/sync_mozaic.py $UBERVU_HOME/mozaic $UBERVU_HOME/thehole/app'

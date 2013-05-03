@@ -2,7 +2,7 @@ call pathogen#infect()
 filetype plugin indent on
 
 "display line numbers
-set number 
+set number
 
 " instead of tabs it puts spaces
 set expandtab
@@ -29,7 +29,7 @@ map <F2> :NERDTreeToggle %:p:h<CR>
 "mapping that opens JSHint javascript linter
 map <F3> :JSHint <Enter>
 
-"mapping CoffeeLint 
+"mapping CoffeeLint
 map <F4> :CoffeeLint \| cwindow <Enter>
 
 "ignore certain folder types and filetypes
@@ -81,6 +81,9 @@ set colorcolumn=80
 
 "hightlight search results
 set hlsearch
+
+"interactive search
+set incsearch
 
 "set smart indent that will automatically indent on [ or {
 set smartindent
@@ -148,3 +151,5 @@ nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 " Automatically remove trailing spaces
 autocmd BufWritePre * :%s/\s\+$//e
+
+let g:syntastic_python_checkers=['pylint']
